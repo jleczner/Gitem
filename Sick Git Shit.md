@@ -4,7 +4,8 @@ Sick Git Shit
 .gitignore
 gitignore.io (to generate for you)
 
-*.DS_Store (generated when you change stuff in Finder, i.e. arrange by, etc.)
+*.DS_Store (generated when you change stuff in Finder, 
+            i.e. arrange by, etc.)
 *.iml (IDE module file)
 .idea* (IDE(A) files) (IntelliJ IDEA)
 
@@ -38,7 +39,8 @@ vim .bash_profile
 
 alias alias_name="command_to_run"
 
-alias killjunk="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"
+alias killjunk="find . -name .DS_Store -print0 | 
+                xargs -0 git rm -f --ignore-unmatch"
 
 source ~/.bash_profile (to load)
 
@@ -57,9 +59,10 @@ git commit - m ""
 git remote add origin linkToRepo
 git push -u origin master
 
-The key is "argument-less git-pull". When you do a git pull from a branch,
-without specifying a source remote or branch, git looks at the branch.<name>.merge setting
-to know where to pull from. git push -u sets this information for the branch you're pushing.
+The key is "argument-less git-pull". When you do a git pull from a
+ branch, without specifying a source remote or branch, git looks at the
+  branch.<name>.merge setting to know where to pull from. git push -u 
+  sets this information for the branch you're pushing.
 
 -- From fork
 git clone link path
@@ -67,9 +70,5 @@ git remote -v (view remotes)
 git remote add upstream linkToRepo
 git remote -v (view remotes) (try again to see the difference)
 
-------------------------------------------------
-For a cool shell that eliminates the need to type
-'cd' and shows when your directory is a git branch
-------------------------------------------------
 
-Check out zsh on the interwebs and see if you can install it. It's pretty beautiful.
+
